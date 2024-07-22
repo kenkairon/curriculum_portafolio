@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Iconos a través de Cdn de boostrap5 link de los iconos https://icons.getbootstrap.com/-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+<header class="bg-primary text-white text-center py-5">
+    <h1>Carlos Enrique Vásquez Colimilla</h1>
+    <p>Desarrollador Web</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+            <a class="navbar-brand alert alert-warning card" href="#">Curriculum Vitae</a>
+            <a class="navbar-brand alert alert-primary card" href="https://www.linkedin.com/in/carlos-v%C3%A1squez-33687943/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a class="navbar-brand alert alert-secondary card" href="https://github.com/kenkairon/" target="_blank"><i class="bi bi-github"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link alert alert-secondary card linkBorde" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alert alert-secondary card linkBorde" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alert alert-secondary card linkBorde" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alert alert-secondary card linkBorde" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <section id="about">
+            <h2><i class="bi bi-person-workspace"></i> Sobre mí</h2>
+            <p>Soy un desarrollador comprometido con la resolución de
+                problemas de bases de datos y el equilibrio entre el front-end y el
+                back-end, para crear aplicaciones que no solo se vean bien, sino
+                que también funcionen correctamente.
+                Mi objetivo a corto plazo encontrar un buen entorno para crecer
+                como desarrollador y como profesional y a la vez ser productivo en
+                el trabajo teniendo mayores retos y mejores oportunidades.
+            </p>
+    </section>
+
+    <section id="projects">
+            <h2><i class="bi bi-body-text"></i> Proyectos</h2>
+            <ul>
+                <li>Uno de mis mayores logros profesionales fue colaborar en el
+                    desarrollo del front-end y back-end de un CRM para una empresa
+                    de restaurantes en la que trabajé con la empresa de desarrollo
+                    llamada Ineave.
+                </li>                
+            </ul>
+    </section>
+
+    <section id="skills">
+            <h2><i class="bi bi-trophy-fill"></i> Habilidades</h2>
+            <ul>
+                <li>Entre mis habilidades destaco mi capacidad para aprender
+                    continuamente y mi funcionamiento continuo en trabajo a diario
+                    eso se refleja en la variedad de trabajos personales que tengo en mi
+                    repositorio en GitHub.
+                </li>
+                <li>
+                    Tengo conocimientos de HTML5, CSS3 Y JAVASCRIPT.
+                </li>               
+            </ul>
+    </section>
+    <!-- Sección Contáctanos-->
+    <section class="container-fluid" id="contacto">
+            <div class="row alert alert-secondary">                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-5 col-xl-3"><button  class="btn btn-primary" id="contacto_boton"><i class="bi bi-layout-text-window-reverse"></i> Contactáctame Ahora </button></div>
+            </div>
+    </section>
+    <section id="section_contacto" class="ocultar">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+    </section>
+</main>
+<span class="ir-arriba bi bi-triangle-fill"></span>
+    <section class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <button class="btn btn-success button" style="display: none;" onclick="openWhatsApp()">
+              <i class="bi bi-whatsapp"></i>  Whatsapp
+            </button>
+          </div>
+        </div>
+    </section>
+<footer class="text-center py-4">
+    <p>&copy; 2024 Carlos Vásquez. Todos los derechos reservados.</p>
+</footer>
+   
+<!-- WhatsApp Widget -->
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-60740641-0fa2-45df-b309-df200b7ae8fa"></div>    
+<!--Script para llamar a jquery versión 3.6.3-->
+<!--Jquery-->
+<script src="jquery/jquery-3.6.3.min.js"></script>
+<script src="js/boton.js"></script>
+<!-- Botón para hacer aparecer el formulario y agregarle una clase y poner abajo el scroll-->
+<script src="js/contacto.js"></script>
+<!-- Custom JS -->
+<script src="js/eventos.js"></script>
+<script src="js/whatsapp.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

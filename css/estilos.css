@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;    
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/*Hover de link */
+.card:hover{
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1)
+}
+.linkBorde{
+    -webkit-border-top-left-radius: 2px;
+-webkit-border-top-right-radius: 20px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-topright: 20px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 2px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 10px;
+}
+.ocultar{
+    display:none;
+}
+/* Aparecer Formulario de Contacto */
+.aparecer{
+    display:block;
+    scroll-behavior:initial;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+}
+ /* Css Botón de Arriba*/
+    .ir-arriba {
+    display:none;
+    padding:10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2989d8+50,7db9e8+100 */
+    background: linear-gradient(to bottom,  #2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    font-size:22px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    border-radius:100px;
+       
+}
