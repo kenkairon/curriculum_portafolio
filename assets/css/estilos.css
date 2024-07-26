@@ -1,7 +1,9 @@
 /* styles.css */
+/* Cuerpo de la Página */
 body {
     font-family: 'Poppins', sans-serif;        
 }
+/* La Cabezera Principal  */
 header {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
     background: linear-gradient(to bottom,  rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -12,7 +14,6 @@ header {
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);   
 }
-
 /*Hover de link */
 .card:hover{
     -webkit-transform:scale(1.1);
@@ -67,22 +68,22 @@ footer {
     border-radius:100px;
        
 }
-/* Adaptar la imagen */
-.responsive-img {
-    max-width: 100%;
-    width: 100px;
-    height: 100px;
-  }
-  
-  
-/* Diseño para los Mensajes de Alerta */
+/* Configuración Mensajes de Alerta */      
+.my-popup-class {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
+    border-radius: 25% / 50%;                                 /* 1 parámetro (x / y) */
+    border-radius: 5px 50px / 50px 15px;                      /* 2 parámetros (x / y) */
+    border-radius: 50px 25px 10px / 50px 75px 10px;           /* 3 parámetros (x / y) */
+    border-radius: 5px 50px 5px 50px / 50px 15px 50px 15px;
+
+}    
 .my-title-class {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     color: #2c3e50;
-  }
-  
-  .my-popup-class {
+}  
+.my-popup-class {
     background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
     border: 2px solid #3085d6;
-  }
+} 
+  
