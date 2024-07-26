@@ -1,19 +1,18 @@
 /* styles.css */
 body {
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;        
 }
-
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 60px 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
+    background: linear-gradient(to bottom,  rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-family: "Zain", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);   
 }
 
-h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
 /*Hover de link */
 .card:hover{
     -webkit-transform:scale(1.1);
@@ -24,14 +23,14 @@ h2 {
 }
 .linkBorde{
     -webkit-border-top-left-radius: 2px;
--webkit-border-top-right-radius: 20px;
--webkit-border-bottom-left-radius: 10px;
--moz-border-radius-topleft: 2px;
--moz-border-radius-topright: 20px;
--moz-border-radius-bottomleft: 10px;
-border-top-left-radius: 2px;
-border-top-right-radius: 20px;
-border-bottom-left-radius: 10px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
 }
 .ocultar{
     display:none;
@@ -68,3 +67,22 @@ footer {
     border-radius:100px;
        
 }
+/* Adaptar la imagen */
+.responsive-img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+/* Diseño para los Mensajes de Alerta */
+.my-title-class {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  .my-popup-class {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
+    border: 2px solid #3085d6;
+  }
