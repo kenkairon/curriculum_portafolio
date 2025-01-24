@@ -15,6 +15,7 @@ header {
     font-size: 2em;
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 /*Hover de link */
@@ -26,16 +27,15 @@ header {
     transform: scale(1.1)
 }
 
-.linkBorde {
-    -webkit-border-top-left-radius: 2px;
-    -webkit-border-top-right-radius: 20px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-radius-topleft: 2px;
-    -moz-border-radius-topright: 20px;
-    -moz-border-radius-bottomleft: 10px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 10px;
+.navbar-nav .nav-link {
+    border-radius: 1;
+    /* Bordes rectos para consistencia */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(48, 157, 207, 0.2);
+    /* Color del hover */
 }
 
 .ocultar {
@@ -46,6 +46,38 @@ header {
 .aparecer {
     display: block;
     scroll-behavior: initial;
+}
+
+.highlight-text {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    font-weight: 600;
+    /* Grosor del texto */
+    color: #0056b3;
+    /* Azul destacado */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* Transición suave */
+}
+
+/* Hover para todos los enlaces y botones */
+.nav-link:hover .highlight-text {
+    color: #004080;
+    /* Azul más intenso */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Sombra más pronunciada */
+}
+
+/* Personalización del botón CV Vitae */
+button.nav-link {
+    border: none;
+    /* Eliminar bordes predeterminados */
+    cursor: pointer;
+    /* Cursor de clic */
+}
+
+button.nav-link:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+    /* Fondo más claro al hacer hover */
 }
 
 footer {
