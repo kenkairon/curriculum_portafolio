@@ -218,17 +218,26 @@
         <!-- Modal -->
         <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="downloadModalLabel">Descargar Curriculum Vitae</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-3 shadow-lg">
+                    <div class="modal-header bg-primary text-white rounded-top-3">
+                        <h5 class="modal-title d-flex align-items-center" id="downloadModalLabel">
+                            <i class="bi bi-download me-2"></i> Descargar Curriculum Vitae
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <p>Selecciona el idioma del curriculum que deseas descargar:</p>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-success" id="downloadES">Español</button>
-                            <button class="btn btn-info" id="downloadEN">Inglés</button>
+                    <div class="modal-body text-center">
+                        <p class="mb-4 fs-5">Selecciona el idioma del curriculum que deseas descargar:</p>
+                        <div class="d-grid gap-3">
+                            <a href="assets/cv/Carlos_Vasquez_Colimilla_español.pdf" target="_blank"
+                                class="btn btn-success d-flex align-items-center justify-content-center">
+                                <i class="bi bi-file-earmark-text me-2"></i> Español
+                            </a>
+                            <a href="assets/cv/Carlos_Vasquez_Colimilla_ingles.pdf" target="_blank"
+                                class="btn btn-info d-flex align-items-center justify-content-center">
+                                <i class="bi bi-file-earmark-text me-2"></i> Inglés
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +263,6 @@
     <script src="assets/js/boton.js"></script>
     <script src="assets/js/corazon.js"></script>
     <script src="assets/js/informacion.js"></script>
-    <script src="assets/js/curriculum.js"></script>
     <!-- Botón para hacer aparecer el formulario y agregarle una clase y poner abajo el scroll-->
     <script src="assets/js/contacto.js"></script>
     <!--Validación de Contacto-->
