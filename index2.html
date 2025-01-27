@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <h1 id="title">Carlos Enrique Vásquez Colimilla</h1>
+        <h2 id="subtitle">Desarrollador Web</h2>
+        <button id="languageToggle" class="btn btn-light mt-3">
+            <i class="bi bi-translate"></i> Change to English
+        </button>
+    </header>
+
+    <main class="container my-5">
+        <section id="objective">
+            <h2 id="objectiveTitle" class="text-primary"><i class="bi bi-trophy-fill"></i> Objetivo Profesional</h2>
+            <p id="objectiveText">Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y
+                Python (Django), especializado en construir aplicaciones web escalables y optimizadas para alto
+                rendimiento.</p>
+        </section>
+        <section id="about">
+            <h2 id="aboutTitle"><i class="bi bi-person-workspace"></i> Sobre mí</h2>
+            <p id="aboutText">Soy un desarrollador comprometido con la resolución de problemas de bases de datos y el
+                equilibrio entre el front-end y el back-end.</p>
+        </section>
+    </main>
+
+    <script>
+        // Contenido en ambos idiomas
+        const translations = {
+            es: {
+                title: "Carlos Enrique Vásquez Colimilla",
+                subtitle: "Desarrollador Web",
+                objectiveTitle: "Objetivo Profesional",
+                objectiveText: "Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y Python (Django), especializado en construir aplicaciones web escalables y optimizadas para alto rendimiento.",
+                aboutTitle: "Sobre mí",
+                aboutText: "Soy un desarrollador comprometido con la resolución de problemas de bases de datos y el equilibrio entre el front-end y el back-end."
+            },
+            en: {
+                title: "Carlos Enrique Vásquez Colimilla",
+                subtitle: "Web Developer",
+                objectiveTitle: "Professional Objective",
+                objectiveText: "Full Stack Developer with strong skills in JavaScript, Ruby on Rails, and Python (Django), specializing in building scalable and high-performance web applications.",
+                aboutTitle: "About Me",
+                aboutText: "I am a developer committed to solving database problems and balancing front-end and back-end to create applications that not only look good but also work efficiently."
+            }
+        };
+
+        let currentLanguage = "es"; // Idioma inicial
+
+        // Cambiar el idioma
+        document.getElementById("languageToggle").addEventListener("click", () => {
+            currentLanguage = currentLanguage === "es" ? "en" : "es"; // Alternar entre inglés y español
+            const langContent = translations[currentLanguage];
+
+            // Actualizar el contenido de los elementos
+            document.getElementById("title").textContent = langContent.title;
+            document.getElementById("subtitle").textContent = langContent.subtitle;
+            document.getElementById("objectiveTitle").textContent = langContent.objectiveTitle;
+            document.getElementById("objectiveText").textContent = langContent.objectiveText;
+            document.getElementById("aboutTitle").textContent = langContent.aboutTitle;
+            document.getElementById("aboutText").textContent = langContent.aboutText;
+
+            // Cambiar el texto del botón
+            document.getElementById("languageToggle").innerHTML =
+                currentLanguage === "es"
+                    ? '<i class="bi bi-translate"></i> Change to English'
+                    : '<i class="bi bi-translate"></i> Cambiar a Español';
+        });
+    </script>
+</body>
+
+</html>

@@ -22,11 +22,11 @@
 
 <body>
     <header class="bg-primary text-white text-center py-5 elegant-gradient-border">
-        <h1>Carlos Enrique Vásquez Colimilla</h1>
+        <h1 id="title">Carlos Enrique Vásquez Colimilla</h1>
         <section class="py-5 bg-dark text-white">
             <div class="container">
                 <div class="text-center p-4 border border-light rounded">
-                    <h2 class="fw-bold display-5 mb-3">
+                    <h2 id="subtitle" class="fw-bold display-5 mb-3">
                         <i class="bi bi-code-slash text-light me-2"></i>
                         Desarrollador Web
                     </h2>
@@ -44,11 +44,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Bootstrap Icons -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-            rel="stylesheet">
-
         <div class="mt-4">
             <button id="openModal" class="btn btn-light shadow px-4 py-2 fs-4">
                 <i class="bi bi-robot"></i> ¿Qué Piensa Chat GPT de mí?
@@ -102,21 +97,30 @@
                             <i class="bi bi-lightbulb"></i> <span class="highlight-text">Habilidades</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-3">
                         <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#contacto">
                             <i class="bi bi-envelope"></i> <span class="highlight-text">Contacto</span>
                         </a>
                     </li>
+                    <!-- Enlace para cambiar idioma -->
+                    <!--<li class="nav-item">
+                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2"
+                            href="javascript:void(0);" id="languageToggle">
+                            <i class="bi bi-translate"></i> <span class="highlight-text">Change to English</span>
+                        </a>
+                    </li>
+                    -->
                 </ul>
             </div>
+
         </div>
     </nav>
     <main class="container my-5">
         <!-- Sección "Objetivo Profesional" -->
         <section id="objective" class="my-5">
-            <h2 class="text-primary"><i class="bi bi-trophy-fill"></i> Objetivo Profesional</h2>
+            <h2 id="objectiveTitle" class="text-primary"><i class="bi bi-trophy-fill"></i> Objetivo Profesional</h2>
             <div class="p-2">
-                <p>Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y
+                <p id="objectiveText">Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y
                     Python (Django), especializado en construir aplicaciones web escalables y optimizadas para alto
                     rendimiento. Con formación en tres bootcamps de Talento Digital, aporto habilidades avanzadas tanto
                     en front-end (HTML5, CSS, JavaScript) como en back-end (Node.js, Ruby on Rails, Django), además de
@@ -129,7 +133,7 @@
         <section id="about my-2">
             <h2><i class="bi bi-person-workspace"></i> Sobre mí</h2>
             <div class="p-2">
-                <p>Soy un desarrollador comprometido con la resolución de
+                <p id="objectiveText">Soy un desarrollador comprometido con la resolución de
                     problemas de bases de datos y el equilibrio entre el front-end y el
                     back-end, para crear aplicaciones que no solo se vean bien, sino
                     que también funcionen correctamente.
@@ -140,22 +144,23 @@
             </div>
             <!-- Intereses y pasatiempos -->
             <h2 class="section-title"><i class="fas fa-heart" id="heart-icon"></i> Intereses y Pasatiempos</h2>
-            <p>Fútbol, ping pong, gastronomía chilena y asiática, series de anime, música clásica y rock progresivo. Me
+            <p id="objectiveText">Fútbol, ping pong, gastronomía chilena y asiática, series de anime, música clásica y
+                rock progresivo. Me
                 gusta bailar y cantar si se da la ocasión.
             </p>
         </section>
         <section id="projects" class="my-2">
             <h2><i class="bi bi-body-text"></i> Proyectos</h2>
             <ul class="p-2">
-                <li>Uno de mis mayores logros profesionales fue colaborar en el
+                <li id="objectiveText">Uno de mis mayores logros profesionales fue colaborar en el
                     desarrollo del front-end y back-end de un CRM para una empresa
                     de restaurantes en la que trabajé con la empresa de desarrollo
                     llamada Ineave.
                 </li>
-                <li>Desarrollar una Tienda Ecommerce de productos de accesorios de celulares
+                <li id="objectiveText">Desarrollar una Tienda Ecommerce de productos de accesorios de celulares
                     en Django.
                 </li>
-                <li>Resolver un Mantenedor de Ingreso de datos trabajando con librerías de Python.
+                <li id="objectiveText">Resolver un Mantenedor de Ingreso de datos trabajando con librerías de Python.
 
                 </li>
             </ul>
@@ -163,27 +168,29 @@
         <section id="skills">
             <h2><i class="bi bi-trophy-fill"></i> Habilidades</h2>
             <ul class="p-2">
-                <li>Entre mis habilidades destaco mi capacidad para aprender
+                <li id="objectiveText">Entre mis habilidades destaco mi capacidad para aprender
                     continuamente y mi funcionamiento continuo en trabajo a diario
                     eso se refleja en la variedad de trabajos personales que tengo en mi
                     repositorio en GitHub.
                 </li>
             </ul>
-            <h2><i class="fas fa-certificate"></i> Certificaciones y <i class="fas fa-tools"></i> Trabajos Aprendidos en
+            <h2 id="objectiveText"><i class="fas fa-certificate"></i> Certificaciones y <i class="fas fa-tools"></i>
+                Trabajos Aprendidos en
                 los Bootcamp </h2>
             <div class="container-fluid">
                 <button class="btn btn-danger me-3 mb-3" onmouseover="apretarBoton()">Ruby on Rails</button>
                 <a href="https://www.acreditta.com/credential/aba55468-87e1-45cc-b9c2-0ee8666eb6e3?utm_source=linkedin_profile&resource_type=badge&resource=aba55468-87e1-45cc-b9c2-0ee8666eb6e3"
                     target="_blank" class="btn btn-success me-3 mb-3">JavaScript</a>
-                <a href="https://portafolio.blandskron.com/home/" class="btn btn-primary mb-3" target="_blank">Trabajos
+                <a id="objectiveText" href="https://portafolio.blandskron.com/home/" class="btn btn-primary mb-3"
+                    target="_blank">Trabajos
                     con Django</a>
             </div>
         </section>
         <!-- Sección Contáctanos-->
         <section class="container-fluid" id="contacto">
             <div class="row alert alert-secondary">
-                <h4>Envíame un email para una Reunión</h4>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-5 col-xl-3">
+                <h4 id="objectiveText">Envíame un email para una Reunión</h4>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-5 col-xl-3" id="objectiveText">
                     <button class="btn btn-primary" id="contacto_boton">
                         <i class="bi bi-layout-text-window-reverse"></i> Contactáctame Ahora
                     </button>
@@ -200,7 +207,7 @@
                     <input type="text" class="form-control" name="name" id="name">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico</label>
+                    <label for="email" class="form-label">Correo electrónico </label>
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
                 <div class="mb-3">
@@ -288,6 +295,7 @@
     <script src="assets/js/boton.js"></script>
     <script src="assets/js/corazon.js"></script>
     <script src="assets/js/informacion.js"></script>
+    <script src="assets/js/english.js"></script>
     <!-- Botón para hacer aparecer el formulario y agregarle una clase y poner abajo el scroll-->
     <script src="assets/js/contacto.js"></script>
     <!--Validación de Contacto-->
