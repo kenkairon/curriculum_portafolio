@@ -156,6 +156,24 @@ footer {
     animation: heartbeat 0.6s infinite;
 }
 
+.icon-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.fab,
+.fas,
+.bi {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    /* Ajusta el margen entre el ícono y el texto */
+}
+
+.text-light {
+    line-height: 1.5;
+    /* Esto puede ayudar a mantener la consistencia en el espaciado */
+}
+
 
 @keyframes heartbeat {
 
