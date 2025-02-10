@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!--Iconos a través de Cdn de boostrap5 link de los iconos https://icons.getbootstrap.com/-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Consolas', 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #252526;
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #d4d4d4 !important;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .btn {
+            background-color: #0e639c;
+            color: #fff;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #1177bb;
+        }
+
+        .modal-content {
+            background-color: #252526;
+            color: #d4d4d4;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #333;
+        }
+
+        .modal-footer {
+            border-top: 1px solid #333;
+        }
+
+        .form-control {
+            background-color: #333;
+            color: #d4d4d4;
+            border: 1px solid #444;
+        }
+
+        .form-control:focus {
+            background-color: #444;
+            color: #fff;
+            border-color: #0e639c;
+        }
+
+        .card {
+            background-color: #252526;
+            border: 1px solid #333;
+        }
+
+        .card-body {
+            color: #d4d4d4;
+        }
+
+        footer {
+            background-color: #252526;
+            border-top: 1px solid #333;
+        }
+
+        a {
+            color: #4fc3f7;
+        }
+
+        a:hover {
+            color: #81d4fa;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .btn {
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+            }
+
+            .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="bg-primary text-white text-center py-5 elegant-gradient-border">
+        <h1 id="title">Carlos Enrique Vásquez Colimilla</h1>
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="text-center p-4 border border-light rounded">
+                    <h2 id="subtitle" class="fw-bold display-5 mb-3">
+                        <i class="bi bi-code-slash text-light me-2"></i>
+                        Desarrollador Web
+                    </h2>
+                    <p class="text-light fs-5">
+                        Especializado en <span class="fw-semibold text-white">HTML</span>,
+                        <span class="fw-semibold text-white">CSS</span>,
+                        <span class="fw-semibold text-white">JavaScript</span>,
+                        <span class="fw-semibold text-white">Bootstrap</span>,
+                        <span class="fw-semibold text-white">React</span>,
+                        <span class="fw-semibold text-white">Node.js</span>,
+                        <span class="fw-semibold text-white">Python</span>, y
+                        <span class="fw-semibold text-white">Django</span>.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="mt-4">
+            <button id="openModal" class="btn btn-light shadow px-4 py-2 fs-4">
+                <i class="bi bi-robot"></i> ¿Qué Piensa Chat GPT de mí?
+            </button>
+            <button type="button" class="btn btn-dark shadow px-4 py-2 fs-4" data-bs-toggle="modal"
+                data-bs-target="#skillsModal">
+                <i class="bi bi-bar-chart-line"></i> Ver Gráfico de Habilidades <i class="bi bi-emoji-sunglasses"></i>
+            </button>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Título principal -->
+            <button type="button" class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2"
+                data-bs-toggle="modal" data-bs-target="#downloadModal">
+                <i class="bi bi-layout-text-sidebar-reverse"></i>
+                <span class="highlight-text"> Descargar Curriculum Vitae </span><i
+                    class="bi bi-arrow-down-circle-fill"></i>
+            </button>
+
+            <!-- Iconos externos -->
+            <a class="navbar-brand alert alert-primary card shadow-sm rounded-pill"
+                href="https://www.linkedin.com/in/carlos-v%C3%A1squez-33687943/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="navbar-brand alert alert-secondary card shadow-sm rounded-pill"
+                href="https://github.com/kenkairon/" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            <!-- Botón colapsable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Alineación al extremo derecho -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#about">
+                            <i class="bi bi-person-circle"></i> <span class="highlight-text">Sobre mí</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#projects">
+                            <i class="bi bi-folder2-open"></i> <span class="highlight-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#skills">
+                            <i class="bi bi-lightbulb"></i> <span class="highlight-text">Habilidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#contacto">
+                            <i class="bi bi-envelope"></i> <span class="highlight-text">Contacto</span>
+                        </a>
+                    </li>
+                    <!-- Enlace para cambiar idioma -->
+                    <!--<li class="nav-item">
+                            <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2"
+                                href="javascript:void(0);" id="languageToggle">
+                                <i class="bi bi-translate"></i> <span class="highlight-text">Change to English</span>
+                            </a>
+                        </li>
+                        -->
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main class="container my-5">
+        <!-- Sección "Objetivo Profesional" -->
+        <section class="my-5">
+            <h2 class="text-primary"><i class="bi bi-trophy-fill"></i> Objetivo Profesional</h2>
+            <div class="p-2">
+                <p>Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y
+                    Python (Django), especializado en construir aplicaciones web escalables y optimizadas para alto
+                    rendimiento. Con formación en tres bootcamps de Talento Digital, aporto habilidades avanzadas tanto
+                    en front-end (HTML5, CSS, JavaScript) como en back-end (Node.js, Ruby on Rails, Django), además de
+                    experiencia en bases de datos relacionales como MySQL y PostgreSQL. Mi enfoque se centra en la
+                    creación de soluciones tecnológicas eficientes y seguras, empleando prácticas de control de
+                    versiones con GitHub y metodologías ágiles. Busco contribuir en un entorno dinámico donde pueda
+                    aplicar y expandir mis competencias en desarrollo web y optimización de procesos.</p>
+            </div>
+        </section>
+        <section id="about my-2">
+            <h2><i class="bi bi-person-workspace"></i> Sobre mí</h2>
+            <div class="p-2">
+                <p id="objectiveText">Soy un desarrollador comprometido con la resolución de
+                    problemas de bases de datos y el equilibrio entre el front-end y el
+                    back-end, para crear aplicaciones que no solo se vean bien, sino
+                    que también funcionen correctamente.
+                    Mi objetivo a corto plazo encontrar un buen entorno para crecer
+                    como desarrollador y como profesional y a la vez ser productivo en
+                    el trabajo teniendo mayores retos y mejores oportunidades.
+                </p>
+            </div>
+            <!-- Intereses y pasatiempos -->
+            <h2 class="section-title"><i class="fas fa-heart" id="heart-icon"></i> Intereses y Pasatiempos</h2>
+            <p id="objectiveText">Fútbol, ping pong, gastronomía chilena y asiática, series de anime, música clásica y
+                rock progresivo. Me
+                gusta bailar y cantar si se da la ocasión.
+            </p>
+        </section>
+        <section id="projects" class="my-2">
+            <h2><i class="bi bi-body-text"></i> Proyectos</h2>
+            <ul class="p-2">
+                <li id="objectiveText">Uno de mis mayores logros profesionales fue colaborar en el
+                    desarrollo del front-end y back-end de un CRM para una empresa
+                    de restaurantes en la que trabajé con la empresa de desarrollo
+                    llamada Ineave.
+                </li>
+                <li id="objectiveText">Desarrollar una Tienda Ecommerce de productos de accesorios de celulares
+                    en Django.
+                </li>
+                <li id="objectiveText">Resolver un Mantenedor de Ingreso de datos trabajando con librerías de Python.
+
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2><i class="bi bi-trophy-fill"></i> Habilidades</h2>
+            <ul class="p-2">
+                <li id="objectiveText">Entre mis habilidades destaco mi capacidad para aprender
+                    continuamente y mi funcionamiento continuo en trabajo a diario
+                    eso se refleja en la variedad de trabajos personales que tengo en mi
+                    repositorio en GitHub.
+                </li>
+            </ul>
+            <h2 id="objectiveText"><i class="fas fa-certificate"></i> Certificaciones y <i class="fas fa-tools"></i>
+                Trabajos Aprendidos en
+                los Bootcamp </h2>
+            <div class="container-fluid">
+                <button class="btn btn-danger me-3 mb-3" onmouseover="apretarBoton()">Ruby on Rails</button>
+                <a href="https://www.acreditta.com/credential/aba55468-87e1-45cc-b9c2-0ee8666eb6e3?utm_source=linkedin_profile&resource_type=badge&resource=aba55468-87e1-45cc-b9c2-0ee8666eb6e3"
+                    target="_blank" class="btn btn-success me-3 mb-3">JavaScript</a>
+                <a id="objectiveText" href="https://portafolio.blandskron.com/home/" class="btn btn-primary mb-3"
+                    target="_blank">Trabajos
+                    con Django</a>
+            </div>
+        </section>
+        <!-- Sección Contáctanos-->
+        <section class="container-fluid" id="contacto">
+            <div class="row alert alert-secondary">
+                <h4 id="objectiveText">Envíame un email para una Reunión</h4>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-5 col-xl-3" id="objectiveText">
+                    <button class="btn btn-primary" id="contacto_boton">
+                        <i class="bi bi-layout-text-window-reverse"></i> Contactáctame Ahora
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--Formato de mensaje-->
+        <div id="mensaje" class="container"></div>
+        <section id="section_contacto" class="ocultar">
+            <h2>Contacto</h2>
+            <form id="contactForm" action="index.html#contacto" method="GET">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico </label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+        <!-- Modal de Habilidades -->
+        <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModalLabel">Gráfico de Habilidades</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <canvas id="skillsChart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <!-- Modal de Bootstrap -->
+        <div id="modal" class="modal fade" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel"><i class="bi bi-robot"></i> Opinión Chat Gpt como
+                            profesional</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="typingText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-3 shadow-lg">
+                    <div class="modal-header bg-primary text-white rounded-top-3">
+                        <h5 class="modal-title d-flex align-items-center" id="downloadModalLabel">
+                            <i class="bi bi-download me-2"></i> Descargar Curriculum Vitae
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="mb-4 fs-5">Selecciona el idioma del curriculum que deseas descargar:</p>
+                        <div class="d-grid gap-3">
+                            <a href="assets/cv/Carlos_Vasquez_Colimilla_español.pdf" target="_blank"
+                                class="btn btn-success d-flex align-items-center justify-content-center">
+                                <i class="bi bi-file-earmark-text me-2"></i> Español
+                            </a>
+                            <a href="assets/cv/Carlos_Vasquez_Colimilla_ingles.pdf" target="_blank"
+                                class="btn btn-info d-flex align-items-center justify-content-center">
+                                <i class="bi bi-file-earmark-text me-2"></i> English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div>
+        <span class="ir-arriba bi bi-triangle-fill"></span>
+    </div>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Carlos Vásquez. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('WEj90xjPqOppjbn2d')
+    </script>
+    <!-- WhatsApp Widget -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-60740641-0fa2-45df-b309-df200b7ae8fa"></div>
+    <!--Script para llamar a jquery versión 3.6.3-->
+    <!--Jquery-->
+    <script src="assets/jquery/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/boton.js"></script>
+    <script src="assets/js/corazon.js"></script>
+    <script src="assets/js/informacion.js"></script>
+    <script src="assets/js/english.js"></script>
+    <!-- Botón para hacer aparecer el formulario y agregarle una clase y poner abajo el scroll-->
+    <script src="assets/js/contacto.js"></script>
+    <!--Validación de Contacto-->
+    <script src="assets/js/validacionContacto.js"></script>
+    <!-- Custom JS -->
+    <!--<script src="assets/js/eventos.js"></script>-->
+    <script src="assets/js/whatsapp.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/grafico.js"></script>
+    <script src="assets/js/chatgpt.js"></script>
+</body>
+
+
+</html>

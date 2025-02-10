@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,22 +26,31 @@
         <h1 id="title">Carlos Enrique Vásquez Colimilla</h1>
         <section class="py-5 bg-dark text-white">
             <div class="container">
-                <div class="text-center p-4 border border-light rounded">
-                    <h2 id="subtitle" class="fw-bold display-5 mb-3">
-                        <i class="bi bi-code-slash text-light me-2"></i>
-                        Desarrollador Web
-                    </h2>
-                    <p class="text-light fs-5">
-                        Especializado en <span class="fw-semibold text-white">HTML</span>,
-                        <span class="fw-semibold text-white">CSS</span>,
-                        <span class="fw-semibold text-white">JavaScript</span>,
-                        <span class="fw-semibold text-white">Bootstrap</span>,
-                        <span class="fw-semibold text-white">React</span>,
-                        <span class="fw-semibold text-white">Node.js</span>,
-                        <span class="fw-semibold text-white">Python</span>, y
-                        <span class="fw-semibold text-white">Django</span>.
-
-                    </p>
+                <div class="text-center p-4 border border-secondary rounded">
+                    <h3 id="subtitle" class="font-weight-bold display-4 mb-3">
+                        <i class="bi bi-code-slash text-light mr-2"></i> Desarrollador Web
+                        </h2>
+                        <h2 class="text-light fs-4">
+                            Especializado en:
+                            <span class="font-weight-bold text-info">HTML5</span>,
+                            <span class="font-weight-bold text-info">CSS3</span>,
+                            <span class="font-weight-bold text-info">JavaScript</span>,
+                            <span class="font-weight-bold text-info">Bootstrap</span>,
+                            <span class="font-weight-bold text-info">Ruby</span>,
+                            <span class="font-weight-bold text-info">Node.js</span>,
+                            <span class="font-weight-bold text-info">Python , y</span>
+                            <span class="font-weight-bold text-info">Django</span>.
+                        </h2>
+                </div>
+            </div>
+            <!-- Iconos o habilidades adicionales -->
+            <div class="py-3">
+                <h4 class="font-weight-light">Habilidades adicionales:</h4>
+                <div class="d-flex justify-content-center">
+                    <i class="bi bi-github text-light mx-3" style="font-size: 2rem;"></i>
+                    <i class="bi bi-stack text-light mx-3" style="font-size: 2rem;"></i>
+                    <i class="bi bi-terminal text-light mx-3" style="font-size: 2rem;"></i>
+                    <i class="bi bi-cloud text-light mx-3" style="font-size: 2rem;"></i>
                 </div>
             </div>
         </section>
@@ -56,166 +66,241 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <!-- Título principal -->
-            <button type="button" class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2"
-                data-bs-toggle="modal" data-bs-target="#downloadModal">
-                <i class="bi bi-layout-text-sidebar-reverse"></i>
-                <span class="highlight-text"> Descargar Curriculum Vitae </span><i
-                    class="bi bi-arrow-down-circle-fill"></i>
-            </button>
+            <!-- Contenedor izquierda: Botón CV + redes -->
+            <div class="d-flex gap-3 align-items-center">
+                <!-- Botón CV -->
+                <button type="button" class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2 me-2"
+                    data-bs-toggle="modal" data-bs-target="#downloadModal">
+                    <i class="bi bi-layout-text-sidebar-reverse"></i>
+                    <span class="highlight-text">Descargar CV</span>
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                </button>
 
-            <!-- Iconos externos -->
-            <a class="navbar-brand alert alert-primary card shadow-sm rounded-pill"
-                href="https://www.linkedin.com/in/carlos-v%C3%A1squez-33687943/" target="_blank">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <a class="navbar-brand alert alert-secondary card shadow-sm rounded-pill"
-                href="https://github.com/kenkairon/" target="_blank">
-                <i class="bi bi-github"></i>
-            </a>
+                <!-- Redes sociales con separación -->
+                <div class="d-flex gap-2">
+                    <a class="btn btn-primary shadow-sm rounded-pill p-2"
+                        href="https://www.linkedin.com/in/carlos-v%C3%A1squez-33687943/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="btn btn-secondary shadow-sm rounded-pill p-2" href="https://github.com/kenkairon/"
+                        target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+
             <!-- Botón colapsable -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navegación -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <!-- Alineación al extremo derecho -->
-                    <li class="nav-item me-3">
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-2">
                         <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#about">
-                            <i class="bi bi-person-circle"></i> <span class="highlight-text">Sobre mí</span>
+                            <i class="bi bi-person-circle"></i>
+                            <span class="highlight-text">Sobre mí</span>
                         </a>
                     </li>
-                    <li class="nav-item me-3">
+                    <li class="nav-item me-2">
                         <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#projects">
-                            <i class="bi bi-folder2-open"></i> <span class="highlight-text">Proyectos</span>
+                            <i class="bi bi-folder2-open"></i>
+                            <span class="highlight-text">Proyectos</span>
                         </a>
                     </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#skills">
-                            <i class="bi bi-lightbulb"></i> <span class="highlight-text">Habilidades</span>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3">
+                    <li class="nav-item">
                         <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2" href="#contacto">
-                            <i class="bi bi-envelope"></i> <span class="highlight-text">Contacto</span>
+                            <i class="bi bi-envelope"></i>
+                            <span class="highlight-text">Contacto</span>
                         </a>
                     </li>
-                    <!-- Enlace para cambiar idioma -->
-                    <!--<li class="nav-item">
-                        <a class="nav-link bg-light bg-opacity-50 shadow-sm rounded-pill px-3 py-2"
-                            href="javascript:void(0);" id="languageToggle">
-                            <i class="bi bi-translate"></i> <span class="highlight-text">Change to English</span>
-                        </a>
-                    </li>
-                    -->
                 </ul>
             </div>
-
         </div>
     </nav>
     <main class="container my-5">
-        <!-- Sección "Objetivo Profesional" -->
-        <section id="objective" class="my-5">
-            <h2 id="objectiveTitle" class="text-primary"><i class="bi bi-trophy-fill"></i> Objetivo Profesional</h2>
-            <div class="p-2">
-                <p id="objectiveText">Desarrollador Full Stack con sólidas habilidades en JavaScript, Ruby on Rails y
-                    Python (Django), especializado en construir aplicaciones web escalables y optimizadas para alto
-                    rendimiento. Con formación en tres bootcamps de Talento Digital, aporto habilidades avanzadas tanto
-                    en front-end (HTML5, CSS, JavaScript) como en back-end (Node.js, Ruby on Rails, Django), además de
-                    experiencia en bases de datos relacionales como MySQL y PostgreSQL. Mi enfoque se centra en la
-                    creación de soluciones tecnológicas eficientes y seguras, empleando prácticas de control de
-                    versiones con GitHub y metodologías ágiles. Busco contribuir en un entorno dinámico donde pueda
-                    aplicar y expandir mis competencias en desarrollo web y optimización de procesos.</p>
+        <section class="my-5">
+            <!-- Sección "Objetivo Profesional" -->
+            <div class="col-md-12" id="objetivo-profesional">
+                <div class="card mb-3 text-white rounded-3 shadow-lg"
+                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
+                    <div class="card-header bg-dark rounded-top">
+                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
+                            <i class="bi bi-trophy-fill"></i> Objetivo Profesional
+                        </h2>
+                    </div>
+                    <div class="card-body bg-light text-dark rounded-bottom">
+                        <p style="font-family: 'Fira Code', monospace;">Desarrollador Full Stack con sólidas habilidades
+                            en JavaScript, Ruby on Rails y
+                            Python (Django), especializado en construir aplicaciones web escalables y optimizadas para
+                            alto
+                            rendimiento. Con formación en tres bootcamps de Talento Digital, aporto habilidades
+                            avanzadas tanto
+                            en front-end (HTML5, CSS, JavaScript) como en back-end (Node.js, Ruby on Rails, Django),
+                            además de
+                            experiencia en bases de datos relacionales como MySQL y PostgreSQL. Mi enfoque se centra en
+                            la
+                            creación de soluciones tecnológicas eficientes y seguras, empleando prácticas de control de
+                            versiones con GitHub y metodologías ágiles. Busco contribuir en un entorno dinámico donde
+                            pueda
+                            aplicar y expandir mis competencias en desarrollo web y optimización de procesos.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="about my-2">
-            <h2><i class="bi bi-person-workspace"></i> Sobre mí</h2>
-            <div class="p-2">
-                <p id="objectiveText">Soy un desarrollador comprometido con la resolución de
-                    problemas de bases de datos y el equilibrio entre el front-end y el
-                    back-end, para crear aplicaciones que no solo se vean bien, sino
-                    que también funcionen correctamente.
-                    Mi objetivo a corto plazo encontrar un buen entorno para crecer
-                    como desarrollador y como profesional y a la vez ser productivo en
-                    el trabajo teniendo mayores retos y mejores oportunidades.
-                </p>
+        <section id="about">
+            <!-- Sección "Sobre mi" -->
+            <div class="col-md-12">
+                <div class="card mb-3 text-white rounded-3 shadow-lg"
+                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
+                    <div class="card-header bg-dark rounded-top">
+                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
+                            <i class="bi bi-person-workspace"></i> Sobre mí
+                        </h2>
+                        </h2>
+                    </div>
+                    <div class="card-body bg-light text-dark rounded-bottom">
+                        <p style="font-family: 'Fira Code', monospace;">Soy un desarrollador comprometido con la
+                            resolución de
+                            problemas de bases de datos y el equilibrio entre el front-end y el
+                            back-end, para crear aplicaciones que no solo se vean bien, sino
+                            que también funcionen correctamente.
+                            Mi objetivo a corto plazo encontrar un buen entorno para crecer
+                            como desarrollador y como profesional y a la vez ser productivo en
+                            el trabajo teniendo mayores retos y mejores oportunidades.
+                        </p>
+                    </div>
+                </div>
             </div>
             <!-- Intereses y pasatiempos -->
-            <h2 class="section-title"><i class="fas fa-heart" id="heart-icon"></i> Intereses y Pasatiempos</h2>
-            <p id="objectiveText">Fútbol, ping pong, gastronomía chilena y asiática, series de anime, música clásica y
-                rock progresivo. Me
-                gusta bailar y cantar si se da la ocasión.
-            </p>
+            <div class="col-md-12">
+                <div class="card mb-3 text-white rounded-3 shadow-lg"
+                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
+                    <div class="card-header bg-dark rounded-top">
+                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
+                            <i class="fas fa-heart" id="heart-icon"></i> Intereses y Pasatiempos
+                        </h2>
+                        </h2>
+                    </div>
+                    <div class="card-body bg-light text-dark rounded-bottom">
+                        <p style="font-family: 'Fira Code', monospace;">Fútbol, ping pong, gastronomía chilena y
+                            asiática, series de anime, música clásica y
+                            rock progresivo. Me
+                            gusta bailar y cantar si se da la ocasión.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="projects" class="my-2">
-            <h2><i class="bi bi-body-text"></i> Proyectos</h2>
-            <ul class="p-2">
-                <li id="objectiveText">Uno de mis mayores logros profesionales fue colaborar en el
-                    desarrollo del front-end y back-end de un CRM para una empresa
-                    de restaurantes en la que trabajé con la empresa de desarrollo
-                    llamada Ineave.
-                </li>
-                <li id="objectiveText">Desarrollar una Tienda Ecommerce de productos de accesorios de celulares
-                    en Django.
-                </li>
-                <li id="objectiveText">Resolver un Mantenedor de Ingreso de datos trabajando con librerías de Python.
+            <!-- Sección "Proyectos" -->
+            <div class="col-md-12">
+                <div class="card mb-3 text-white rounded-3 shadow-lg"
+                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
+                    <div class="card-header bg-dark rounded-top">
+                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
+                            <i class="bi bi-body-text"></i> Proyectos
+                        </h2>
+                    </div>
+                    <div class="card-body bg-light text-dark rounded-bottom">
+                        <ul class="p-2" style="font-family: 'Fira Code', monospace;">
+                            <li>Uno de mis mayores logros profesionales fue colaborar en el
+                                desarrollo del front-end y back-end de un CRM para una empresa
+                                de restaurantes en la que trabajé con la empresa de desarrollo
+                                llamada Ineave.
+                            </li>
+                            <li>Desarrollar una Tienda Ecommerce de productos de accesorios de celulares
+                                en Django.
+                            </li>
+                            <li>Resolver un Mantenedor de Ingreso de datos trabajando con librerías de
+                                Python.
 
-                </li>
-            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="skills">
-            <h2><i class="bi bi-trophy-fill"></i> Habilidades</h2>
-            <ul class="p-2">
-                <li id="objectiveText">Entre mis habilidades destaco mi capacidad para aprender
-                    continuamente y mi funcionamiento continuo en trabajo a diario
-                    eso se refleja en la variedad de trabajos personales que tengo en mi
-                    repositorio en GitHub.
-                </li>
-            </ul>
-            <h2 id="objectiveText"><i class="fas fa-certificate"></i> Certificaciones y <i class="fas fa-tools"></i>
-                Trabajos Aprendidos en
-                los Bootcamp </h2>
-            <div class="container-fluid">
-                <button class="btn btn-danger me-3 mb-3" onmouseover="apretarBoton()">Ruby on Rails</button>
-                <a href="https://www.acreditta.com/credential/aba55468-87e1-45cc-b9c2-0ee8666eb6e3?utm_source=linkedin_profile&resource_type=badge&resource=aba55468-87e1-45cc-b9c2-0ee8666eb6e3"
-                    target="_blank" class="btn btn-success me-3 mb-3">JavaScript</a>
-                <a id="objectiveText" href="https://portafolio.blandskron.com/home/" class="btn btn-primary mb-3"
-                    target="_blank">Trabajos
-                    con Django</a>
+            <div class="col-md-12">
+                <div class="card mb-3 text-white rounded-3 shadow-lg"
+                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
+                    <div class="card-header bg-dark rounded-top">
+                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
+                            <i class="fas fa-certificate"></i> Certificaciones y Bootcamps <i class="fas fa-tools"></i>
+                        </h2>
+                    </div>
+                    <div class="card-body bg-light text-dark rounded-bottom">
+                        <div class="container-fluid p-2" style="font-family: 'Fira Code', monospace;">
+                            <button class="btn btn-danger me-3 mb-3" onmouseover="apretarBoton()">Ruby on Rails</button>
+                            <a href="https://www.acreditta.com/credential/aba55468-87e1-45cc-b9c2-0ee8666eb6e3?utm_source=linkedin_profile&resource_type=badge&resource=aba55468-87e1-45cc-b9c2-0ee8666eb6e3"
+                                target="_blank" class="btn btn-success me-3 mb-3">JavaScript</a>
+                            <a id="objectiveText" href="https://portafolio.blandskron.com/home/"
+                                class="btn btn-primary mb-3" target="_blank">Trabajos
+                                con Django</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Sección Contáctanos-->
-        <section class="container-fluid" id="contacto">
-            <div class="row alert alert-secondary">
-                <h4 id="objectiveText">Envíame un email para una Reunión</h4>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-5 col-xl-3" id="objectiveText">
-                    <button class="btn btn-primary" id="contacto_boton">
+        <section class="container my-5 py-4" id="contacto">
+            <div class="row alert alert-secondary rounded-3 shadow-lg p-4">
+                <div class="col-lg-8 text-center mx-auto">
+                    <h4 id="objectiveText" class="fw-bold text-primary">
+                        <i class="bi bi-envelope-fill"></i> Envíame un email para una reunión
+                    </h4>
+                    <p class="text-muted">Estoy disponible para discutir proyectos, ideas, o cualquier consulta
+                        profesional.</p>
+                </div>
+                <div class="col-lg-4 text-center mx-auto mt-3">
+                    <button class="btn btn-primary btn-lg" id="contacto_boton">
                         <i class="bi bi-layout-text-window-reverse"></i> Contactáctame Ahora
                     </button>
                 </div>
             </div>
         </section>
-        <!--Formato de mensaje-->
+
+        <!-- Mensaje -->
         <div id="mensaje" class="container"></div>
-        <section id="section_contacto" class="ocultar">
-            <h2>Contacto</h2>
-            <form id="contactForm" action="index.html#contacto" method="GET">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="name" id="name">
+
+        <section id="section_contacto" class="ocultar container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-3">
+                        <div class="card-header bg-primary text-white text-center rounded-top">
+                            <h2 class="fw-bold mb-0">Contacto</h2>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm" action="index.html#contacto" method="GET">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fw-bold text-primary">Nombre</label>
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Tu nombre completo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-primary">Correo
+                                        electrónico</label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="nombre@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fw-bold text-primary">Mensaje</label>
+                                    <textarea class="form-control" name="message" id="message" rows="4"
+                                        placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" id="button" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send-fill"></i> Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico </label>
-                    <input type="email" class="form-control" name="email" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-                </div>
-                <button type="submit" id="button" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
         </section>
         <!-- Modal de Habilidades -->
         <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
@@ -280,7 +365,7 @@
         <span class="ir-arriba bi bi-triangle-fill"></span>
     </div>
     <footer class="text-center py-4">
-        <p>&copy; 2024 Carlos Vásquez. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Carlos Vásquez. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
