@@ -11,19 +11,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* La Cabezera Principal  */
+/* La Cabezera Principal */
 header {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
-    background: linear-gradient(to bottom, rgb(1, 12, 18) 0%, rgba(48, 157, 207, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    font-family: "Zain", sans-serif;
-    font-weight: 800;
+    /* Fondo oscuro con gradiente, similar a VSCode */
+    background: linear-gradient(to bottom, #1e1e1e, #2d2d2d);
+    /* Fuente monoespaciada, como en VSCode */
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-weight: 600;
+    /* Un peso más liviano para un toque más minimalista */
     font-style: normal;
-    font-size: 2em;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-
+    font-size: 1em;
+    /* Tamaño de fuente moderado, ni tan grande ni tan pequeño */
+    color: #dcdcdc;
+    /* Gris claro para el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    /* Sombra de texto sutil */
+    padding: 1px;
+    /* Espacio alrededor del texto */
+    border-bottom: 2px solid #007acc;
+    /* Línea inferior azul, similar a VSCode */
 }
+
+
 
 /*Hover de link */
 .navbar-nav .nav-link {
