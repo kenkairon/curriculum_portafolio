@@ -14,7 +14,7 @@ body {
 /* La Cabezera Principal  */
 header {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
-    background: linear-gradient(to bottom, rgba(99, 182, 219, 1) 0%, rgba(48, 157, 207, 1) 100%);
+    background: linear-gradient(to bottom, rgb(1, 12, 18) 0%, rgba(48, 157, 207, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     font-family: "Zain", sans-serif;
     font-weight: 800;
