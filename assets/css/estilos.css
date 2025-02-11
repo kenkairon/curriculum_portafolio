@@ -105,18 +105,19 @@ footer {
     display: none;
     padding: 10px;
     background: linear-gradient(to bottom, #2989d8 50%, #7db9e8 100%);
-    font-size: 22px;
+    font-size: 24px;
     color: #fff;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    border-radius: 100px;
+    border-radius: 50%;
     transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-/* 🔥 Fuego animado */
-.ir-arriba::after {
+/* Fuego animado (se agregará con JS) */
+.fuego::after {
     content: "";
     position: absolute;
     bottom: -15px;
@@ -130,7 +131,7 @@ footer {
     animation: fuego 0.3s infinite alternate;
 }
 
-/* 🔥 Animación de fuego */
+/* Animación de fuego */
 @keyframes fuego {
     0% {
         height: 20px;
@@ -144,7 +145,6 @@ footer {
         filter: blur(4px);
     }
 }
-
 
 /* Configuración Mensajes de Alerta */
 .my-popup-class {
