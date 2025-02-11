@@ -196,6 +196,11 @@ footer {
     /* Ajusta el margen entre el ícono y el texto */
 }
 
+.sin-estilo {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
 
 .text-light {
     line-height: 1.5;
