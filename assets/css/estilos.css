@@ -190,11 +190,12 @@ footer {
 
 .fab,
 .fas,
-.bi {
+.bi:not(.sin-estilo) {
     vertical-align: middle;
     margin-right: 0.5rem;
     /* Ajusta el margen entre el ícono y el texto */
 }
+
 
 .text-light {
     line-height: 1.5;

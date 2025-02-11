@@ -107,13 +107,14 @@
                 <div class="d-flex gap-2">
                     <a class="btn btn-primary shadow-sm rounded-pill p-2"
                         href="https://www.linkedin.com/in/carlos-v%C3%A1squez-33687943/" target="_blank">
-                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-linkedin sin-estilo"></i>
                     </a>
                     <a class="btn btn-secondary shadow-sm rounded-pill p-2" href="https://github.com/kenkairon/"
                         target="_blank">
-                        <i class="bi bi-github"></i>
+                        <i class="bi bi-github sin-estilo"></i>
                     </a>
                 </div>
+
             </div>
 
             <!-- Botón colapsable -->
@@ -412,6 +413,20 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="gameModalLabel">Juego del Avión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <canvas id="gameCanvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <div>
         <span class="ir-arriba bi bi-rocket-fill"></span>
@@ -448,6 +463,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/grafico.js"></script>
     <script src="assets/js/chatgpt.js"></script>
+    <script src="assets/js/jugar.js"></script>
 </body>
 
 </html>
