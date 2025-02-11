@@ -24,7 +24,7 @@ function typeWriter() {
 
 // Evento para abrir el modal
 openModalButton.addEventListener('click', function () {
-    const modalElement = new bootstrap.Modal(document.getElementById('modal')); // Inicializa el modal
+    const modalElement = new bootstrap.Modal(document.getElementById('modal'), { keyboard: false });
     modalElement.show(); // Muestra el modal
     typingText.innerHTML = ""; // Limpia el contenido
     i = 0; // Reinicia el índice
