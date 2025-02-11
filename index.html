@@ -34,11 +34,11 @@
         <section class="py-5 bg-dark text-white">
             <div class="container">
                 <div class="text-center p-4 border border-secondary rounded">
-                    <h3 id="subtitle" class="font-weight-bold display-4 mb-3">
+                    <h4 id="subtitle" class="font-weight-bold display-4 mb-3 d-none d-sm-block">
                         <span class="icon-text">
-                            <i class="bi bi-code-slash text-light mr-2"></i> Desarrollador Web
+                            <i class="bi bi-code-slash text-light mr-2"></i>Desarrollador Web
                         </span>
-                    </h3>
+                    </h4>
                     <p class="text-light fs-5">
                         Especializado en:
                         <span class="icon-text" style="color: rgba(232, 131, 106, 0.5);">
@@ -384,27 +384,27 @@
                 </div>
             </div>
         </div>
-        <!-- Modal -->
+        <!-- Modal estilo VS Code -->
         <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rounded-3 shadow-lg">
-                    <div class="modal-header bg-primary text-white rounded-top-3">
+                <div class="modal-content rounded-2 border border-secondary vscode-modal">
+                    <div class="modal-header bg-dark text-light border-bottom border-secondary">
                         <h5 class="modal-title d-flex align-items-center" id="downloadModalLabel">
-                            <i class="bi bi-download me-2"></i> Descargar Curriculum Vitae
+                            <i class="bi bi-download me-2 text-info"></i> Descargar Curriculum Vitae
                         </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
-                    <div class="modal-body text-center">
+                    <div class="modal-body text-center text-light">
                         <p class="mb-4 fs-5">Selecciona el idioma del curriculum que deseas descargar:</p>
                         <div class="d-grid gap-3">
                             <a href="assets/cv/Carlos_Vasquez_Colimilla_español.pdf" target="_blank"
-                                class="btn btn-success d-flex align-items-center justify-content-center">
+                                class="btn btn-vscode d-flex align-items-center justify-content-center">
                                 <i class="bi bi-file-earmark-text me-2"></i> Español
                             </a>
                             <a href="assets/cv/Carlos_Vasquez_Colimilla_ingles.pdf" target="_blank"
-                                class="btn btn-info d-flex align-items-center justify-content-center">
+                                class="btn btn-vscode-alt d-flex align-items-center justify-content-center">
                                 <i class="bi bi-file-earmark-text me-2"></i> English
                             </a>
                         </div>
@@ -414,7 +414,7 @@
         </div>
     </main>
     <div>
-        <span class="ir-arriba bi bi-triangle-fill"></span>
+        <span class="ir-arriba bi bi-rocket-fill"></span>
     </div>
     <footer class="text-center py-4">
         <p>&copy; 2025 Carlos Vásquez. Todos los derechos reservados.</p>
