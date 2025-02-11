@@ -1,98 +1,79 @@
-/* styles.css */
-/* Cuerpo de la Página */
 html {
     scrollbar-width: thin;
-    /* Tamaño fino */
     scrollbar-color: #444 #1e1e1e;
-    /* Color del thumb y del track */
 }
 
+/* Establece el tamaño y color de la barra de desplazamiento */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* La Cabezera Principal */
+/* Define la fuente del cuerpo */
 header {
-    /* Fondo oscuro con gradiente, similar a VSCode */
     background: linear-gradient(to bottom, #1e1e1e, #2d2d2d);
-    /* Fuente monoespaciada, como en VSCode */
     font-family: 'Consolas', 'Courier New', monospace;
     font-weight: 600;
-    /* Un peso más liviano para un toque más minimalista */
-    font-style: normal;
     font-size: 1em;
-    /* Tamaño de fuente moderado, ni tan grande ni tan pequeño */
     color: #dcdcdc;
-    /* Gris claro para el texto */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    /* Sombra de texto sutil */
     padding: 1px;
-    /* Espacio alrededor del texto */
     border-bottom: 2px solid #007acc;
-    /* Línea inferior azul, similar a VSCode */
 }
 
-
-
-/*Hover de link */
+/* Estilo para el encabezado principal, fondo y texto */
 .navbar-nav .nav-link {
     border-radius: 1;
-    /* Bordes rectos para consistencia */
     transition: background-color 0.3s ease;
 }
 
+/* Estilo de los enlaces del menú con transición */
 .navbar-nav .nav-link:hover {
     background-color: rgba(48, 157, 207, 0.2);
-    /* Color del hover */
 }
 
+/* Efecto hover para los enlaces */
 .ocultar {
     display: none;
 }
 
-/* Aparecer Formulario de Contacto */
+/* Oculta elementos */
 .aparecer {
     display: block;
     scroll-behavior: initial;
 }
 
+/* Muestra el formulario de contacto */
 .highlight-text {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    /* Sombra sutil */
     font-weight: 600;
-    /* Grosor del texto */
     color: #0056b3;
-    /* Azul destacado */
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    /* Transición suave */
 }
 
-/* Hover para todos los enlaces y botones */
+/* Estilo de texto destacado con transición */
 .nav-link:hover .highlight-text {
     color: #004080;
-    /* Azul más intenso */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* Sombra más pronunciada */
 }
 
-/* Personalización del botón CV Vitae */
+/* Efecto hover en texto destacado */
 button.nav-link {
     border: none;
-    /* Eliminar bordes predeterminados */
     cursor: pointer;
-    /* Cursor de clic */
 }
 
+/* Estilo de los botones sin bordes */
 button.nav-link:hover {
     background-color: rgba(240, 240, 240, 0.8);
-    /* Fondo más claro al hacer hover */
 }
 
+/* Efecto hover en el botón */
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
 }
 
+/* Estilo del pie de página */
 @media (max-width: 768px) {
 
     header,
@@ -101,6 +82,7 @@ footer {
     }
 }
 
+/* Ajustes para pantallas pequeñas */
 .ir-arriba {
     display: none;
     padding: 10px;
@@ -116,7 +98,7 @@ footer {
     text-align: center;
 }
 
-/* Fuego animado (se agregará con JS) */
+/* Estilo para el botón flotante "ir-arriba" */
 .fuego::after {
     content: "";
     position: absolute;
@@ -131,7 +113,7 @@ footer {
     animation: fuego 0.3s infinite alternate;
 }
 
-/* Animación de fuego */
+/* Efecto de animación de fuego */
 @keyframes fuego {
     0% {
         height: 20px;
@@ -146,68 +128,85 @@ footer {
     }
 }
 
-/* Configuración Mensajes de Alerta */
+/* Animación de fuego */
 .my-popup-class {
     background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
     border-radius: 25% / 50%;
-    /* 1 parámetro (x / y) */
     border-radius: 5px 50px / 50px 15px;
-    /* 2 parámetros (x / y) */
     border-radius: 50px 25px 10px / 50px 75px 10px;
-    /* 3 parámetros (x / y) */
-    border-radius: 5px 50px 5px 50px / 50px 15px 50px 15px;
-
+    border-radius: 5px 50px 5px 50px / 50px 15px;
 }
 
+/* Estilo del pop-up con bordes redondeados */
 .my-title-class {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     color: #2c3e50;
 }
 
-.my-popup-class {
-    background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
-    border: 2px solid #3085d6;
-}
-
+/* Estilo del título del pop-up */
 #heart-icon {
     color: gray;
-    /* Color inicial */
     transition: color 0.3s ease;
     cursor: pointer;
 }
 
+/* Estilo inicial del icono de corazón */
 #heart-icon.liked {
     color: red;
-    /* Cambia a rojo */
     animation: heartbeat 0.6s infinite;
 }
 
+/* Efecto cuando el icono de corazón es "liked" */
 .icon-text {
     display: inline-flex;
     align-items: center;
 }
 
+/* Estilo para el texto con iconos alineados */
 .fab,
 .fas,
 .bi:not(.sin-estilo) {
     vertical-align: middle;
     margin-right: 0.5rem;
-    /* Ajusta el margen entre el ícono y el texto */
 }
 
+/* Ajuste para los íconos de la barra de navegación */
 .sin-estilo {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-
-
-.text-light {
-    line-height: 1.5;
-    /* Esto puede ayudar a mantener la consistencia en el espaciado */
+/* Sombra en los iconos con la clase "sin-estilo" */
+button img {
+    width: 1.2em;
+    height: 1.2em;
 }
 
+/* Ajuste de tamaño para las imágenes dentro de los botones */
+.text-light {
+    line-height: 1.5;
+}
 
+/* Ajuste del espaciado de texto */
+.certificacion-img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para las imágenes de certificación */
+.certificacion-img:hover {
+    transform: scale(1.1);
+}
+
+/* Efecto de agrandamiento al pasar el mouse sobre la imagen de certificación */
+.certificacion-link {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* Estilo para los enlaces de certificación */
 @keyframes heartbeat {
 
     0%,
@@ -220,45 +219,45 @@ footer {
     }
 }
 
-/* Estilo general del modal */
+/* Animación para el latido del corazón */
 .vscode-modal {
     background-color: #1e1e1e;
-    /* Fondo oscuro como VS Code */
     color: #d4d4d4;
-    /* Texto claro */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Encabezado */
+/* Estilo del modal tipo VS Code */
 .modal-header {
     background-color: #252526;
-    /* Gris oscuro */
     color: #d4d4d4;
 }
 
-/* Botones de descarga */
+/* Estilo del encabezado del modal */
 .btn-vscode {
     background-color: #007acc;
-    /* Azul VS Code */
     color: #fff;
     border: 1px solid #007acc;
     transition: 0.3s ease;
 }
 
+/* Estilo del botón VSCode */
 .btn-vscode:hover {
     background-color: #005f99;
     border-color: #005f99;
 }
 
+/* Estilo del botón VSCode en hover */
 .btn-vscode-alt {
     background-color: #008000;
-    /* Verde de éxito */
     color: #fff;
     border: 1px solid #008000;
     transition: 0.3s ease;
 }
 
+/* Estilo del botón de éxito */
 .btn-vscode-alt:hover {
     background-color: #006600;
     border-color: #006600;
 }
+
+/* Estilo del botón de éxito en hover */
