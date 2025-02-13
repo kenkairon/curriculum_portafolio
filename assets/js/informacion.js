@@ -87,7 +87,7 @@ const credentialData = {
 };
 
 // Usar SweetAlert para mostrar la alerta con la imagen y el card
-function apretarBoton(){
+function apretarBoton() {
     Swal.fire({
         title: credentialData.name,
         html: `
@@ -100,7 +100,7 @@ function apretarBoton(){
                 </div>
             </div>
         `,
-        width: '600px',        
+        width: '600px',
         showCloseButton: true,
         showConfirmButton: false,
         allowOutsideClick: false
