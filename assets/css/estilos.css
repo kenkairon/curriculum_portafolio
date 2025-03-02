@@ -1,9 +1,10 @@
+/* Establece el tamaño y color de la barra de desplazamiento */
 html {
     scrollbar-width: thin;
     scrollbar-color: #444 #1e1e1e;
 }
 
-/* Establece el tamaño y color de la barra de desplazamiento */
+
 body {
     font-family: 'Poppins', sans-serif;
 }
