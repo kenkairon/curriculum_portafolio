@@ -416,8 +416,32 @@
             </div>
         </div>
     </main>
-    <div>
-        <span class="ir-arriba bi bi-rocket-fill sin-estilo"></span>
+    <!-- Botón flotante para abrir chat -->
+    <div id="chat-toggle-btn" aria-label="Abrir chat">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="Chat WhatsApp" />
+    </div>
+
+    !-- Botón flotante -->
+    <div id="whatsapp-toggle-btn" aria-label="Abrir chat WhatsApp" title="Abrir chat WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+    </div>
+
+    <!-- Widget chat -->
+    <div id="whatsapp-widget" style="display:none;" aria-live="polite" role="region" aria-label="Chat WhatsApp">
+        <div id="whatsapp-header">
+            Chat WhatsApp
+            <span id="whatsapp-close" aria-label="Cerrar chat" role="button" tabindex="0">&times;</span>
+        </div>
+        <div id="whatsapp-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+        <form id="whatsapp-form">
+            <div id="whatsapp-input-area">
+                <input type="text" id="whatsapp-input" autocomplete="off" placeholder="Escribe tu mensaje..."
+                    aria-label="Escribe tu mensaje" required />
+                <button type="submit" id="whatsapp-send-btn" aria-label="Enviar mensaje">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <span class="ir-arriba bi bi-rocket-fill sin-estilo"></span>
     </div>
     <footer class="text-center py-4">
         <p>&copy; 2025 Carlos Vásquez. Todos los derechos reservados.</p>
@@ -426,8 +450,6 @@
     <script src="assets/js/email.js"></script>
     <!-- WhatsApp Widget -->
     <script src="assets/js/header.js"></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-60740641-0fa2-45df-b309-df200b7ae8fa"></div>
     <!--Script para llamar a jquery versión 3.6.3-->
     <!--Jquery-->
     <script src="assets/jquery/jquery-3.6.3.min.js"></script>
@@ -450,6 +472,7 @@
     <script src="assets/js/grafico.js"></script>
     <script src="assets/js/chatgpt.js"></script>
     <script src="assets/js/jugar.js"></script>
+
 </body>
 
 </html>
