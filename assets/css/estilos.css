@@ -535,3 +535,26 @@ footer .wrapper {
     height: 32px;
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
 }
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-title i {
+    margin-right: 8px;
+}
+
+.card-img-top {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.badge {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}

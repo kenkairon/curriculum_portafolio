@@ -244,36 +244,45 @@
         </section>
         <section id="projects" class="my-5">
             <div class="col-md-12">
-                <div class="card mb-3 text-white rounded-3 shadow-lg"
-                    style="background-color: #1E1E1E; border: 1px solid #2D2D30;">
-                    <div class="card-header bg-dark rounded-top text-center">
-                        <h2 style="font-family: 'Courier New', Courier, monospace; color: #dfe6e3;">
-                            <i class="bi bi-body-text"></i> Proyectos Destacados
+                <div class="card mb-3 rounded-4 shadow-lg"
+                    style="background: linear-gradient(135deg, #1f1c2c, #928dab); border: none;">
+
+                    <!-- Encabezado -->
+                    <div class="card-header text-center py-4 text-white"
+                        style="background: rgba(0,0,0,0.7); border-radius: 1rem 1rem 0 0;">
+                        <h2 style="font-family: 'Courier New', Courier, monospace;">
+                            <i class="bi bi-stars"></i> Proyectos Destacados
                         </h2>
                     </div>
-                    <div class="card-body bg-light text-dark rounded-bottom">
+
+                    <!-- Contenido -->
+                    <div class="card-body bg-light rounded-bottom p-4 text-dark">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
 
                             <!-- Proyecto 1 -->
                             <div class="col">
-                                <div class="card h-100 shadow border-0">
-                                    <div class="card-body">
+                                <div
+                                    class="card h-100 shadow-lg border-0 position-relative overflow-hidden project-card">
+                                    <img src="assets/img/PaginaPortafolio.png" class="card-img-top" alt="Proyecto 1">
+                                    <div class="card-body text-dark">
                                         <h5 class="card-title text-primary">
-                                            <i class="bi bi-laptop"></i> Proyecto Portafolio Profesional Online
+                                            <i class="bi bi-laptop"></i> Portafolio Profesional Online
                                         </h5>
-                                        <img src="assets/img/PaginaPortafolio.png" class="card-img-top"
-                                            alt="Proyecto 1">
-
                                         <p class="card-text">
                                             Este proyecto facilita la creación de un <strong>CV profesional</strong>,
-                                            permitiendo ingresar datos en tiempo real y generar un formato listo para
-                                            impresión.
-                                            <br>
-                                            <i class="bi bi-circle-fill text-success"></i> <strong>Django</strong>
-                                            <i class="bi bi-filetype-js text-warning"></i> <strong>JavaScript</strong>
-                                            <i class="bi bi-database text-primary"></i> <strong>SQLite3</strong>
+                                            permitiendo ingresar datos en tiempo real y generar automáticamente un
+                                            formato listo
+                                            para impresión. Es una herramienta ideal para quienes buscan optimizar la
+                                            presentación de su perfil laboral.
                                         </p>
-
+                                        <!-- Tecnologías -->
+                                        <div class="mb-2">
+                                            <span class="badge bg-success"><i class="bi bi-circle-fill"></i>
+                                                Django</span>
+                                            <span class="badge bg-warning text-dark"><i class="bi bi-filetype-js"></i>
+                                                JavaScript</span>
+                                            <span class="badge bg-primary"><i class="bi bi-database"></i> SQLite3</span>
+                                        </div>
                                     </div>
                                     <div class="card-footer text-center bg-white">
                                         <a href="https://github.com/kenkairon/Portafolio" target="_blank"
@@ -290,52 +299,67 @@
 
                             <!-- Proyecto 2 -->
                             <div class="col">
-                                <div class="card h-100 shadow border-0">
-                                    <div class="card-body">
+                                <div
+                                    class="card h-100 shadow-lg border-0 position-relative overflow-hidden project-card">
+                                    <img src="assets/img/HomeSpecialist.png" class="card-img-top" alt="Proyecto 2">
+                                    <div class="card-body text-dark">
                                         <h5 class="card-title text-success">
                                             <i class="bi bi-laptop"></i> Home Specialist
                                         </h5>
-                                        <img src="assets/img/HomeSpecialist.png" class="card-img-top" alt="Proyecto 2">
                                         <p class="card-text">
                                             Plataforma que facilita la <strong>búsqueda de especialistas</strong> en
-                                            diferentes áreas
-                                            , permitiendo filtrar y contactar expertos de manera rápida y
+                                            diferentes áreas,
+                                            permitiendo filtrar perfiles y contactar expertos de manera rápida y
                                             sencilla.
-                                            Desarrollada con <strong><i class="bi bi-node-plus"></i> Node.js</strong> y
-                                            <strong><i class="bi bi-filetype-js"></i>JavaScript</strong>.
+                                            Diseñada para mejorar la experiencia del usuario y optimizar la conexión con
+                                            profesionales.
                                         </p>
+                                        <!-- Tecnologías -->
+                                        <div class="mb-2">
+                                            <span class="badge bg-dark"><i class="bi bi-node-plus"></i> Node.js</span>
+                                            <span class="badge bg-warning text-dark"><i class="bi bi-filetype-js"></i>
+                                                JavaScript</span>
+                                        </div>
                                     </div>
                                     <div class="card-footer text-center bg-white">
                                         <a href="https://github.com/kenkairon/home_especialista_node" target="_blank"
                                             class="btn btn-dark btn-sm me-2">
                                             <i class="bi bi-github"></i> Código
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Proyecto 3 -->
                             <div class="col">
-                                <div class="card h-100 shadow border-0">
-                                    <div class="card-body">
+                                <div
+                                    class="card h-100 shadow-lg border-0 position-relative overflow-hidden project-card">
+                                    <img src="assets/img/CuadroMandoIntegral.png" class="card-img-top" alt="Proyecto 3">
+                                    <div class="card-body text-dark">
                                         <h5 class="card-title text-warning">
-                                            <i class="bi bi-bar-chart-line"></i>Cuadro de Mando Integral
+                                            <i class="bi bi-bar-chart-line"></i> Cuadro de Mando Integral
                                         </h5>
-                                        <img src="assets/img/CuadroMandoIntegral.png" class="card-img-top"
-                                            alt="Proyecto 3">
-
                                         <p class="card-text">
-                                            Aplicación web responsiva con <strong>javascript</strong> y
-                                            <strong>Bootstrap</strong>, optimizada para móviles.
+                                            Aplicación web responsiva que permite visualizar métricas de forma clara y
+                                            ordenada,
+                                            mejorando la toma de decisiones estratégicas. Desarrollada con
+                                            <strong>JavaScript</strong> y
+                                            <strong>Bootstrap</strong>, con diseño optimizado para dispositivos móviles.
                                         </p>
+                                        <!-- Tecnologías -->
+                                        <div class="mb-2">
+                                            <span class="badge bg-warning text-dark"><i class="bi bi-filetype-js"></i>
+                                                JavaScript</span>
+                                            <span class="badge bg-info text-dark"><i class="bi bi-bootstrap"></i>
+                                                Bootstrap</span>
+                                        </div>
                                     </div>
                                     <div class="card-footer text-center bg-white">
                                         <a href="https://github.com/kenkairon/CuadroMandoIntegral" target="_blank"
                                             class="btn btn-dark btn-sm me-2">
                                             <i class="bi bi-github"></i> Código
                                         </a>
-                                        <a href=" https://kenkairon.github.io/CuadroMandoIntegral" target="_blank"
+                                        <a href="https://kenkairon.github.io/CuadroMandoIntegral" target="_blank"
                                             class="btn btn-warning btn-sm text-dark">
                                             <i class="bi bi-box-arrow-up-right"></i> Demo
                                         </a>
@@ -348,7 +372,6 @@
                 </div>
             </div>
         </section>
-
         <section id="skills">
             <div class="col-md-12">
                 <div class="card mb-3 text-white rounded-3 shadow-lg"
