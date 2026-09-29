@@ -7,35 +7,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Datos de tecnologías
     const labels = [
-        'JavaScript', 'Ruby on Rails', 'Python', 'HTML', 'CSS',
-        'Django', 'Bootstrap', 'PostgreSQL', 'MySQL',
-        'JUnit & Mockito', 'Selenium', 'Cucumber & Gherkin',
-        'Postman & Newman', 'JMeter'
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'TypeScript',
+        'React',
+        'Bootstrap',
+        'Python',
+        'Django',
+        'Node.js',
+        'Ruby / Rails',
+        'SQL',
+        'PostgreSQL',
+        'Git / GitHub',
+        'Docker',
+        'AWS',
+        'Postman / Newman'
     ];
 
     const dataValues = [
-        85, 70, 80, 90, 95,
-        89, 90, 75, 70,
-        80, 78, 85, 82, 77
+        90, 88, 85, 72,
+        75, 90, 85, 85,
+        72, 75, 80, 75,
+        85, 65, 60, 82
     ];
 
-    // Colores más profesionales y variados
+    // Colores correspondientes a cada tecnología
     const colors = [
-        'rgba(54, 162, 235, 0.6)',
-        'rgba(255, 99, 132, 0.6)',
-        'rgba(75, 192, 192, 0.6)',
-        'rgba(153, 102, 255, 0.6)',
-        'rgba(255, 159, 64, 0.6)',
-        'rgba(255, 205, 86, 0.6)',
-        'rgba(54, 162, 235, 0.6)',
-        'rgba(255, 99, 71, 0.6)',
-        'rgba(255, 165, 0, 0.6)',
-        'rgba(100, 181, 246, 0.6)',
-        'rgba(244, 67, 54, 0.6)',
-        'rgba(0, 200, 83, 0.6)',
-        'rgba(255, 202, 40, 0.6)',
-        'rgba(121, 85, 72, 0.6)'
+        'rgba(227, 79, 38, 0.6)',     // HTML5
+        'rgba(21, 114, 182, 0.6)',    // CSS3
+        'rgba(247, 223, 30, 0.6)',    // JavaScript
+        'rgba(49, 120, 198, 0.6)',    // TypeScript
+        'rgba(97, 218, 251, 0.6)',    // React
+        'rgba(121, 82, 179, 0.6)',    // Bootstrap
+        'rgba(55, 118, 171, 0.6)',    // Python
+        'rgba(68, 183, 139, 0.6)',    // Django
+        'rgba(104, 160, 99, 0.6)',    // Node.js
+        'rgba(204, 52, 45, 0.6)',     // Ruby / Rails
+        'rgba(68, 121, 161, 0.6)',    // SQL
+        'rgba(51, 103, 145, 0.6)',    // PostgreSQL
+        'rgba(240, 80, 50, 0.6)',     // Git / GitHub
+        'rgba(36, 150, 237, 0.6)',    // Docker
+        'rgba(255, 153, 0, 0.6)',     // AWS
+        'rgba(255, 108, 55, 0.6)'     // Postman / Newman
     ];
+
+
 
     const borderColors = colors.map(c => c.replace("0.6", "1"));
 
